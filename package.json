@@ -1,0 +1,27 @@
+{
+  "name": "gmusic-wal",
+  "version": "1.0.0",
+  "description": "Theme for Google Play Music Desktop Player using Wal",
+  "main": "gulpfile.js",
+  "scripts": {
+    "run": "gulp styles",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItsPhant/gmusic-wal.git"
+  },
+  "author": "Ellie Phant <itsphant@gmail.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ItsPhant/gmusic-wal/issues"
+  },
+  "homepage": "https://github.com/ItsPhant/gmusic-wal#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0"
+  }
+}
