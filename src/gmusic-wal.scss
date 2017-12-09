@@ -8,78 +8,77 @@ body,
 .material,
 .material .cluster-text-protection,
 .material .cluster-text-protection::before {
-  background: $background;
+  background: $color0;
 }
 
 body {
-  background: $background !important;
+  background: $color0 !important;
 
   #main div .lane-content .fade-out:after {
-    background: linear-gradient(to right, rgba($background, 0), rgba($background, 1));
+    background: linear-gradient(to right, rgba($color0, 0), rgba($color0, 1));
   }
 
   #main div .lane-content .material-shadow-z1 .fade-out:after {
-    background: linear-gradient(to right, rgba(48, 48, 48, 0), rgba(48, 48, 48, 1));
+    background: linear-gradient(to right, rgba($color3, 0), rgba($color3, 1));
   }
 }
 
 .cluster .header .cluster-title {
-  color: $foreground;
+  color: $color7;
 }
 
 .material-card {
-  background: #303030;
+  background: $color3;
 
   .title {
-    color: $foreground;
+    color: $color7;
   }
 
   .sub-title {
-    color: rgba($foreground, .7);
+    color: rgba($color7, .7);
   }
 
   .details paper-icon-button.menu-anchor {
-    color: rgba($foreground, .7);
+    color: rgba($color7, .7);
   }
 }
 
 .cluster .header .subtitle {
-  color: rgba($foreground, .7);
+  color: rgba($color7, .7);
 }
 
 h2.title {
-  color: $foreground;
+  color: $color7;
 }
 
 #loading-overlay {
-  background-color: rgba($background, 0.7)!important;
+  background-color: rgba($color0, 0.7) !important;
 }
 
 .gpm-detail-page-header-0 {
   div.gpm-detail-page-header {
     h2, &> [slot="buttons"] {
-      color: #ddd !important;
+      color: $color7 !important;
     }
 
     a, span {
-      color: #aaa !important;
+      color: $color6 !important;
     }
   }
 }
 
 #material-app-bar {
-  background: #333;
-  /* ff5722*/
+  background: $color3;
 
   border: none !important;
 }
 
 .paper-tabs-0 #selectionBar.paper-tabs {
-  background: $foreground;
+  background: $color7;
 }
 
 #tabsContainer .tab-content.style-scope.paper-tab {
-  color: $foreground;
+  color: $color7;
 }
 
 body.qp #material-app-bar #material-one-left .music-logo {
@@ -88,7 +87,7 @@ body.qp #material-app-bar #material-one-left .music-logo {
 
 #material-app-bar #countSummary,
 #material-app-bar #action-bar-container {
-  color: $foreground;
+  color: $color7;
 }
 
 #left-nav-open-button:after,
@@ -98,11 +97,11 @@ body.qp #material-app-bar #material-one-left .music-logo {
 }
 
 #playlist-drawer-button.paper-icon-button-0 iron-icon.paper-icon-button {
-  color: $foreground;
+  color: $color7;
 }
 
 #left-nav-open-button.paper-icon-button-0 iron-icon.paper-icon-button {
-  color: $foreground;
+  color: $color7;
 }
 
 body.qp #content-container.has-hero-image #material-app-bar #material-one-left .music-logo-link {
@@ -114,26 +113,26 @@ body.qp #content-container.has-hero-image.transparent #material-app-bar #materia
 }
 
 .sj-search-box-1 {
-  background-color: #383838;
+  background-color: $color4;
 }
 
 .sj-search-box-0 {
-  background: rgba($foreground, .15);
+  background: rgba($color7, .15);
 
   #searchIcon.sj-search-box {
-    color: $foreground !important;
+    color: $color7 !important;
   }
 
   &, #input.sj-search-box::-webkit-input-placeholder {
-    color: rgba($foreground, .75);
+    color: rgba($color7, .75);
   }
 
   #input.sj-search-box {
-    color: $foreground !important;
+    color: $color7 !important;
   }
 
   #clearButton.sj-search-box {
-    color: rgba($foreground, .5);
+    color: rgba($color7, .5);
   }
 }
 
@@ -141,111 +140,113 @@ body.qp #content-container.has-hero-image.transparent #material-app-bar #materia
 .sj-search-box-1[opened],
 .sj-search-box-0[has-query],
 .sj-search-box-1[has-query] {
-  background: #333;
-  color: $foreground;
+  background: $color3;
+  color: $color7;
 }
 
 .sj-search-box-0[opened]:not([num-suggestions="0"]) #input.sj-search-box,
 .sj-search-box-1[opened]:not([num-suggestions="0"]) #input.sj-search-box {
-  border-bottom: 1px solid #424242;
+  border-bottom: 1px solid $color5;
 }
 
 sj-search-suggestion:hover,
 sj-search-suggestion.query-selected {
-  background: #424242;
+  background: $color5;
 }
 
 sj-search-suggestion #queryText.sj-search-suggestion .sub-match.sj-search-suggestion {
-  color: rgba($foreground, .7);
+  color: rgba($color7, .7);
 }
 
 .sj-search-box-1 #input.sj-search-box {
-  color: $foreground;
+  color: $color7;
 }
 
 .sj-search-suggestion-0:hover,
 .sj-search-suggestion-0.query-selected {
-  background-color: #444;
+  background-color: $color5;
 }
 
 .column .material-card .title,
 .recommended-header {
-  color: $foreground !important;
+  color: $color7 !important;
 }
 
 .column .material-card .sub-title {
-  color: rgba($foreground, .7) !important;
+  color: rgba($color7, .7) !important;
 }
 
 .material-card .reason .reason-text {
-  color: rgba($foreground, .5) !important;
+  color: rgba($color7, .5) !important;
 }
 
 .sj-home-0 #gradient.sj-home {
-  background: linear-gradient(to top, #111, rgba(0, 0, 0, .3)), linear-gradient(to right, #111, rgba(0, 0, 0, .3)) !important;
+  background: linear-gradient(to top, $color0, rgba($color0, .3)),
+  linear-gradient(to right, $color0, rgba($color0, .3)) !important;
 }
 
 sj-home #gradient.sj-home {
-  background: linear-gradient(to top, #111, rgba(0, 0, 0, .3)), linear-gradient(to right, #111, rgba(0, 0, 0, .3)) !important;
+  background: linear-gradient(to top, $color0, rgba($color0, .3)),
+  linear-gradient(to right, $color0, rgba($color0, .3)) !important;
 }
 
 sj-home h2 span.home-palette-id-1.tooltip {
-  color: $foreground !important;
+  color: $color7 !important;
 }
 
 sj-home #backgroundColor.sj-home,
 .sj-home-0 #backgroundColor.sj-home {
-  background: #111 !important;
+  background: $color3 !important;
 }
 
 gpm-card-grid .sj-card-0[card-aspect-ratio="wide"] {
-  background: #333 !important;
+  background: $color3 !important;
 }
 
 .sj-card-0 {
   #details.sj-card > [slot="title"] {
-    color: $foreground !important;
+    color: $color7 !important;
   }
 
   &[card-aspect-ratio="wide"] #details.sj-card > [slot="title"],
   #details.sj-card > [slot="subtitle"] {
-    color: #ccc !important;
+    color: $color7 !important;
   }
 }
 
 .sj-card-0 #details.sj-card > [slot="description"],
 .gpm-headline-header-0 > [slot="subtitle"] {
-  color: #999 !important;
+  color: $color6 !important;
 }
 
 sj-home[selected="6"] .home-palette-id-2 {
-  color: #999 !important;
+  color: $color6 !important;
 }
 
 .gpm-headline-header-0 h2.gpm-headline-header > a {
-  color: #ccc !important;
+  color: $color7 !important;
 }
 
 .sj-page-indicator-0 .sj-page-tab.sj-page-indicator {
-  color: rgba(200, 200, 200, 0.5);
+  color: rgba($color7, 0.5);
 }
 
 .gpm-card-grid-1 sj-card {
   .card-title {
-    color: $foreground !important;
+    color: $color7 !important;
   }
 
   sj-card .card-description {
-    color: rgba($foreground, .7) !important;
+    color: rgba($color7, .7) !important;
   }
 }
 
 .gpm-now-card-grid-0 .buttons.gpm-now-card-grid paper-icon-button.gpm-now-card-grid {
-  background-color: rgba($foreground, 0.2);
+  background-color: rgba($color7, 0.2);
 }
 
 %sj-home-styles {
-  color: #777 !important
+  color: $color5 !important
 }
 
 @for $i from 0 through 10 {
@@ -256,22 +257,22 @@ sj-home[selected="6"] .home-palette-id-2 {
 
 .recent-view {
   #gridTitle {
-    color: $foreground !important;
+    color: $color7 !important;
   }
 
   .details {
     .card-title {
-      color: $foreground !important;
+      color: $color7 !important;
     }
 
     .card-subtitle {
-      color: rgba($foreground, .7) !important;
+      color: rgba($color7, .7) !important;
     }
   }
 }
 
 .gpm-card-grid-3 > [slot="title"] {
-  color: $foreground !important;
+  color: $color7 !important;
 }
 
 #music-content.material {
@@ -282,70 +283,70 @@ sj-home[selected="6"] .home-palette-id-2 {
 .material-album-container,
 .songlist-container,
 .material-detail-view .artist-details {
-  background: #212121 !important;
+  background: $color0 !important;
 }
 
 .material {
   .song-row td,
   .upload-progress-row td {
-    background: #212121;
-    color: rgba($foreground, .7);
+    background: $color0;
+    color: rgba($color7, .7);
   }
 
   .song-row.selected-song-row td,
   .song-row.currently-playing td {
-    background-color: #272727 !important;
+    background-color: $color8 !important;
   }
 
   .song-row .title-right-items {
-    color: rgba($foreground, .7);
+    color: rgba($color7, .7);
   }
 
   .song-table [data-col="title"],
   .song-table.mini [data-col="song-details"] .song-title {
-    color: rgba($foreground, .7);
+    color: rgba($color7, .7);
   }
 }
 
 tr.song-row a {
-  color: rgba($foreground, .7);
+  color: rgba($color7, .7);
 }
 
 .song-table th {
-  color: rgba($foreground, .5);
+  color: rgba($color7, .5);
 }
 
 .song-row:hover > td {
-  background-color: #282828 !important;
+  background-color: $color8 !important;
 }
 
 .sub-details a {
-  color: $foreground;
+  color: $color7;
 }
 
 .material-detail-view .material-container-details .info {
   .sub-details paper-icon-button {
-    color: $foreground;
+    color: $color7;
   }
 
   .title .title-text {
-    color: $foreground;
+    color: $color7;
   }
 
   .container-stats-container .container-stats {
     &, & span {
-      color: rgba($foreground, .7);
+      color: rgba($color7, .7);
     }
   }
 }
 
 gpm-action-buttons {
   border-top: 1px solid #333;
-  color: rgba($foreground, .7);
+  color: rgba($color7, .7);
 }
 
 .song-table th iron-icon {
-  color: rgba($foreground, .7);
+  color: rgba($color7, .7);
 }
 
 .rating-container.thumbs li {
@@ -353,7 +354,7 @@ gpm-action-buttons {
 }
 
 .fade-out.gray:after {
-  background: linear-gradient(to right, rgba(17, 17, 17, 0), rgba(17, 17, 17, 1));
+  background: linear-gradient(to right, rgba($color0, 0), rgba($color0, 1));
 }
 
 .song-indicator[data-playback-status="playing"] {
@@ -362,62 +363,62 @@ gpm-action-buttons {
 
 .song-indicator[data-playback-status="paused"] {
   background-image: url('http://i67.tinypic.com/2je42zl.png')!important;
-  background-size: 100%!important;
-  background-position: -1px -3px!important;
+  background-size: 100% !important;
+  background-position: -1px -3px !important;
 }
 
 .song-indicator[data-playback-status="loading"] {
   background-image: url('http://i65.tinypic.com/2lvijht.gif')!important;
-  background-size: 60%!important;
+  background-size: 60% !important;
 }
 
 .material-detail-view .material-container-details .info .title {
-  color: $foreground;
+  color: $color7;
 }
 
 .playlist-view .editable:hover {
-  background: rgba($foreground, .1);
+  background: rgba($color7, .1);
 }
 
 h2.section-header {
-  color: $foreground;
+  color: $color7;
 }
 
 /* Artist Pages */
 
 .material-detail-view .artist-details {
-  color: $foreground;
+  color: $color7;
   
   .bio-wrapper .bio {
-    color: rgba($foreground, .7);
+    color: rgba($color7, .7);
   }
 }
 
 .material-detail-view .material-container-details .read-more-button:hover {
-  background: #333;
+  background: $color3;
 }
 
 body.qp .material .cluster-text-protection::before,
 body.qp .material .cluster-text-protection {
-  background: #111;
+  background: $color0;
 }
 
 #player {
-  background: #212121;
+  background: $color0;
 
   .now-playing-actions paper-icon-button {
-    color: rgba($foreground, .7);
+    color: rgba($color7, .7);
   }
 }
 
 #currently-playing-title {
-  color: $foreground;
+  color: $color7;
 }
 
 #player-artist,
 .player-album,
 .player-dash {
-  color: rgba($foreground, .7);
+  color: rgba($color7, .7);
 }
 
 
@@ -426,27 +427,27 @@ body.qp .material .cluster-text-protection {
 #material-volume-indicator,
 #material-volume-low,
 #material-volume-high {
-  fill: rgba($foreground, .7);
+  fill: rgba($color7, .7);
 }
 
 .paper-progress-0 #progressContainer.paper-progress,
 .paper-progress-0 .indeterminate.paper-progress::after {} #player paper-icon-button[data-id="repeat"],
 #player paper-icon-button[data-id="shuffle"],
 #queue {
-  color: rgba($foreground, .7);
+  color: rgba($color7, .7);
 }
 
 .paper-icon-button-0 #ink.paper-icon-button {
-  color: $foreground;
+  color: $color7;
 }
 
 #player:hover #material-player-progress:not([disabled]) #progressContainer {
-  background: #424242;
+  background: $color5;
 }
 
 #nav-container .nav-toolbar,
 .paper-drawer-panel-0 iron-selector.paper-drawer-panel > #drawer.paper-drawer-panel {
-  background: #161616;
+  background: $color0;
 }
 
 #nav-container {
@@ -454,26 +455,26 @@ body.qp .material .cluster-text-protection {
 }
 
 .nav-item-container {
-  color: $foreground;
+  color: $color7;
 }
 
 #nav .nav-section.material,
 #nav.material {
-  background: #161616;
+  background: $color0 
 }
 
 #nav_collections .nav-item-container:focus,
 .nav-item-container:focus,
 .nav-item-container:hover {
-  background: #212121;
+  background: $color0;
 }
 
 .new-playlist-drawer .nav-section-divider {
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid $color3;
 }
 
 .nav-item-container.selected {
-  background: #333;
+  background: $color3;
 }
 
 .new-playlist-drawer #nav-container .nav-toolbar .menu-logo {
@@ -482,31 +483,31 @@ body.qp .material .cluster-text-protection {
 
 .paper-drawer-panel-1 iron-selector.paper-drawer-panel > #drawer.paper-drawer-panel,
 .paper-toolbar-2 {
-  background-color: #161616;
+  background-color: $color0;
 }
 
 sj-right-drawer #drawer.sj-right-drawer {
-  background: #161616;
+  background: $color0;
 }
 
 .paper-toolbar-1,
 .paper-toolbar-2 {
-  background: #161616;
-  color: $foreground;
+  background: $color0;
+  color: $color7;
 }
 
 #playlist-drawer {
   a, #playlist-drawer-header {
-    color: $foreground;
+    color: $color7;
   }
 
   .autoplaylist-section,
   #recent-playlists-container {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid $color3;
   }
 
   paper-header-panel[at-top] paper-toolbar:not([style-scope]):not(.style-scope) {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid $color3;
   }
 
   .playlist-drawer-item {
@@ -515,26 +516,26 @@ sj-right-drawer #drawer.sj-right-drawer {
     sj-play-button:hover~.playlist-wrapper,
     iron-icon:hover~.playlist-wrapper,
     &.playlist-drop-target:not(.subscribed) .playlist-wrapper {
-      background: #272727;
+      background: $color8;
     }
   }
 }
 
 #queue-overlay::after {
-  border: 8px solid #212121;
+  border: 8px solid $color0;
 }
 
 .sj-mini-queue-0 #queueContainer.sj-mini-queue {
-  background: #212121;
+  background: $color0;
 }
 
 .iron-overlay-backdrop-0 {
-  background: $background;
+  background: $color0;
 }
 
 .paper-dialog-0 {
-  background: #333;
-  color: $foreground;
+  background: $color3;
+  color: $color7;
 }
 
 .paper-input-container-0 .input-content.paper-input-container {
@@ -542,47 +543,47 @@ sj-right-drawer #drawer.sj-right-drawer {
   textarea,
   iron-autogrow-textarea,
   .paper-input-input {
-    color: $foreground;
+    color: $color7;
   }
 }
 
 .share-buttons .share-button .button-label {
-  color: $foreground;
+  color: $color7;
 }
 
 .visualizercard {
-  background: #212121;
+  background: $color0;
 
   .label {
-    color: $foreground;
+    color: $color7;
   }
 }
 
 .material-share-options #sharing-option-label {
-  color: $foreground;
+  color: $color7;
 }
 
 .situations-filter {
-  background: #212121;
-  color: $foreground;
+  background: $color0;
+  color: $color7;
 }
 
 .filter-description {
-  color: rgba($foreground, .7) !important;
+  color: rgba($color7, .7) !important;
 }
 
 .material-list {
   li:not(:last-child) .li-content {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid $color3;
   }
 
   a {
-    color: $foreground;
+    color: $color7;
   }
 
   li a:hover,
   li a:focus {
-    background: #272727;
+    background: $color8;
   }
 }
 
@@ -592,25 +593,25 @@ sj-right-drawer #drawer.sj-right-drawer {
 
 .material-detail-view {
   .station-container-content-wrapper .material-container-details {
-    background: #212121;
+    background: $color0;
   }
 
   .material-container-details .info .description {
-    color: $foreground;
+    color: $color7;
   }
 
   .top-tracks {
-    background: #212121;
-    color: $foreground;
+    background: $color0;
+    color: $color7;
   }
 }
 
 .sub-details {
-  color: rgba($foreground, .7);
+  color: rgba($color7, .7);
 }
 
 .more-songs-container {
-  border-top: 1px solid #333;
+  border-top: 1px solid $color3;
 }
 
 .playlist-menu,
@@ -618,26 +619,26 @@ sj-right-drawer #drawer.sj-right-drawer {
 .goog-menuitem-content,
 .now-playing-menu,
 .goog-menu-vertical {
-  color: rgb(200, 200, 200)!important;
-  background: #333 !important;
+  color: $color7;
+  background: $color3 !important;
 }
 
 .material {
   .goog-menu .goog-menuseparator {
-    background: #424242 !important;
+    background: $color5 !important;
   }
 
   .goog-menuheader {
-    color: rgba($foreground, .5) !important;
+    color: rgba($color7, .5) !important;
   }
 }
 
 .goog-menuitem:hover {
-  background: #363636 !important;
+  background: $color4 !important;
 
   & > .goog-menuitem-content {
-    color: $foreground !important;
-    background: #363636 !important;
+    color: $color7 !important;
+    background: $color4 !important;
   }
 }
 
@@ -647,65 +648,65 @@ sj-right-drawer #drawer.sj-right-drawer {
 
 ::-webkit-scrollbar-track {
   border-radius: 10px;
-  background: rgba($background, .1);
+  background: rgba($color0, .1);
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: rgba($background, .5);
+  background: rgba($color0, .5);
 }
 
 #gbwa .gb_g .gb_ca,
 .gb_ja,
 #gbwa .gb_ga {
-  background-color: rgb(80, 80, 80)!important;
+  background-color: $color5;
 }
 
 #gbwa {
   .gb_g {
-    border: none!important;
+    border: none !important;
   }
 
   .gb_Z .gb_O {
-    color: $foreground!important;
+    color: $color7 !important;
 
     &:hover {
-      color: $background!important;
+      color: $color0 !important;
     }
   }
 
   .gb_ha a {
-    color: rgba($background, 0.6)!important;
+    color: rgba($color0, 0.6) !important;
   }
 
   .gb_ka {
-    background-color: rgb(60, 60, 60)!important;
+    background-color: $color5;
   }
 
   .gb_ka:hover,
   .gb_ka:hover > #gbwa .gb_ha a {
-    color: rgba($foreground, 1)!important;
-    background-color: rgb(40, 40, 40)!important;
+    color: rgba($color7, 1) !important;
+    background-color: $color8;
   }
 
   .gb_ha a {
-    color: rgba($foreground, 0.6)!important;
+    color: rgba($color7, 0.6) !important;
   }
 
   .gb_la {
-    background-color: rgb(60, 60, 60)!important;
+    background-color: $color5 !important;
   }
 
   .gb_la:hover {
-    color: rgba($foreground, 1)!important;
-    background-color: rgb(40, 40, 40)!important;
+    color: rgba($color7, 1) !important;
+    background-color: $color8 !important;
   }
 
   .gb_wa {
-    background: rgb(60, 60, 60)!important;
+    background: $color5 !important;
 
     .gb_ya {
-      color: rgba($foreground, 0.8)!important;
+      color: rgba($color7, 0.8) !important;
     }
   }
 
@@ -718,7 +719,7 @@ sj-right-drawer #drawer.sj-right-drawer {
 }
 
 .gb_la {
-  border-color: rgba($foreground, 0.3)!important;
+  border-color: rgba($color7, 0.3) !important;
 }
 
 .gb_fa .gb_ea .gb_b {
@@ -727,12 +728,12 @@ sj-right-drawer #drawer.sj-right-drawer {
 }
 
 .gb_za .gb_ia {
-  background: #444;
+  background: $color5;
 }
 
 .now-playing-menu.goog-menu,
 .goog-menu {
   border: none !important;
   border-radius: 2px;
-  box-shadow: 0 1px 4px 0 rgba($foreground, 0.37)!important;
+  box-shadow: 0 1px 4px 0 rgba($color7, 0.37) !important;
 }
