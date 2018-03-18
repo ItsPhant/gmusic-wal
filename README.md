@@ -1,5 +1,7 @@
 # gmusic-wal
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ItsPhant/gmusic-wal.svg)](https://greenkeeper.io/)
+
 A stylesheet made for Google Play Music and 
 [Wal](https://github.com/dylanaraps/pywal/)
 
